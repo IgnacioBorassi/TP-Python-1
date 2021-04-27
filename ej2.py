@@ -1,23 +1,23 @@
-def perimetro(h, b):
+def perimetro(altura, base):
     "Dada la altura y la base de un rectangulo, calcular el perimetro"
-    return (h*2 + b*2) #Podria ser (2h + 2b)
+    return (altura*2 + base*2) #Podria ser (2h + 2b)
 
-def area(h, b):
+def area(altura, base):
     "Dada la altura y la base de un rectangulo, calcular su area"
-    return (h*b)
+    return (altura*base)
 
-def circulo(r):
+def circulo(radio):
     "Dado el radio de un circulo calcular el perimetro"
-    return (2*3.14*(r*r))
+    return (2*3.14*(radio*radio))
 
-def acirculo(r):
+def acirculo(radio):
     "Dado el radio de un circulo calcular el area"
-    return (3.14*(r*r))
+    return (3.14*(radio*radio))
 
-def esfera(r):
+def esfera(radio):
     "Dado el radio de una esfera, calcular su volumen"
-    return ((4/3*3.14*r))
+    return ((4/3*3.14*radio))
 
-def hipotenusa(l1, l2):
+def hipotenusa(lado1, lado2):
     "Dado los catetos de un triangulo isoceles, calcular su hipotenusa"
-    return ((l1*l1)+(l2*l2))
+    return ((lado1*lado1)+(lado2*lado2))
