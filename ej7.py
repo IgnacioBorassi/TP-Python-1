@@ -34,8 +34,8 @@ def fecha(dia, mes, ano):
             else: 
                 resultadodia = False
         elif mes == 2:
-            if bisiesto(ano) == "Es bisiesto":
-                if dia > 0 and dia < 30:
+            if bisiesto(ano) == "Es bisiesto":          #Uso la funcion para verificar si el año es bisiesto
+                if dia > 0 and dia < 30:                #Las variables t/f las uso para saber si son o no validas las diferentes instancias de la fecha
                     resultadodia = True
                 else: 
                     resultadodia = False   
