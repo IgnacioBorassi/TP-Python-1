@@ -72,6 +72,6 @@ def cantidad(dias, mes, ano):
     else: 
         print("No es valido") 
 
-def cantidadmeses(dia, mes, ano):
+def cantidadmeses(dia, mes, ano):               #Todavia esto no funciona
     if fecha(dias, mes, ano) == "Es valido":
-        if  bisiesto(ano):   
+        if  bisiesto(ano):     

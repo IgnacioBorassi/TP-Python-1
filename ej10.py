@@ -1,12 +1,12 @@
 import random   
 from random import randrange
            
-random=(random.randrange(50))
+random=(random.randrange(30))
 
 intentos = 0
 numero = 0
 
-while not numero == random:
+while not numero == random:     #Basicamente compara si es mayor o menor y lo indica, hasta que sea el correcto.
     numero = int(input("Ingrese un numero"))
     
     if numero > random:
