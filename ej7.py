@@ -81,8 +81,4 @@ def findeano(dia, mes, ano):                #Calcula la cantidad de dias que fal
     else:
         return "La fecha no es valida"
 
-
-print(findeano(1, 2, 2020))
-
-
         
