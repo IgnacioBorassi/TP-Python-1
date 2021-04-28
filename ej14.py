@@ -13,10 +13,10 @@ while True:
     aciertos = 0
     try:
         adivinar= int(input("Intenta adivinar: "))
-        if adivinar > 1000: 
+        if adivinar > 1000:         
             adivinar = str(adivinar)
             for numero in random:
-                if numero in str(adivinar):
+                if numero in str(adivinar):             
                     coincidencia = coincidencia + 1
 
             for i in range(1,5):

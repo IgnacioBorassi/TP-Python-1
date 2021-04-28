@@ -12,14 +12,14 @@ def bisiesto(año):
 
 #Dado un mes, indicar la cantidad de dias
 def mes(mes):
-    if mes == (str("enero" or "marzo" or "mayo" or "julio" or "agosto" or "octubre" or "diciembre")): 
-        print("Tiene 31 dias")
-    if mes == (str("Abril" or "junio" or "septiembre" or "noviembre")): 
-        print("Tiene 30 dias")
-    if mes == (str("Febrero")):
-        print("Tiene 28 dias")
+    if mes == (int(1 or 3 or 5 or 7 or 8 or 10 or 12)): 
+        cantdias = 31
+    if mes == (int(4 or 6 or 9 or 11)): 
+        cantdias = 30
+    if mes == (int(2)):
+        cantdias = 28
     
-    return(mes)
+    return(cantdias)
 
 #Dada una fecha, indicar si es valida
 def fecha(dia, mes, ano):
@@ -34,8 +34,8 @@ def fecha(dia, mes, ano):
             else: 
                 resultadodia = False
         elif mes == 2:
-            if bisiesto(ano) == "Es bisiesto":          #Uso la funcion para verificar si el año es bisiesto
-                if dia > 0 and dia < 30:                #Las variables t/f las uso para saber si son o no validas las diferentes instancias de la fecha
+            if bisiesto(ano) == "Es bisiesto":          #Uso la funcion para verificar si el año es bisiesto.
+                if dia > 0 and dia < 30:                #Las variables t/f las uso para saber si son o no validas las diferentes instancias de la fecha.
                     resultadodia = True
                 else: 
                     resultadodia = False   
@@ -57,7 +57,7 @@ def fecha(dia, mes, ano):
         validacion = "No es valido"
     return(validacion)
 
-#Dada una fecha, indicar la cantidad de dias faltantes para terminar el mes
+#Dada una fecha, indicar la cantidad de dias faltantes para terminar el mes.
 def cantidad(dias, mes, ano):
     if fecha(dias, mes, ano) == "Es valido":
         if bisiesto(ano) == "Es bisiesto" and mes == 2:
@@ -72,6 +72,17 @@ def cantidad(dias, mes, ano):
     else: 
         print("No es valido") 
 
-def cantidadmeses(dia, mes, ano):               #Todavia esto no funciona
-    if fecha(dias, mes, ano) == "Es valido":
-        if  bisiesto(ano):     
+def findeano(dia, mes, ano):                #Calcula la cantidad de dias que faltan para terminar el año.
+    if (fecha(dia, mes, ano)) == "Es valido":
+        dias = cantidad(dia, mes, ano)
+        for i in range(mes, 12):
+            dias += mes(i)
+        return dias
+    else:
+        return "La fecha no es valida"
+
+
+print(findeano(1, 2, 2020))
+
+
+        
