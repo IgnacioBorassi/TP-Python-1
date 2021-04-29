@@ -1,4 +1,5 @@
-def siglas(oracion):                #Devuelve la primer letra de las palabras de la oracion en forma de siglas.
+def devuelvesiglas(oracion):                
+    """Devuelve la primer letra de las palabras de la oracion en forma de siglas."""
     palabras = oracion.split(" ")
     resultado = ""
 
@@ -7,7 +8,8 @@ def siglas(oracion):                #Devuelve la primer letra de las palabras de
 
     return resultado.upper()
 
-def mayuscula(oracion):                         #Convierte a mayusculas la primer letra de cada palabra de la oracion.
+def convierteamayuscula(oracion):                         
+    """Convierte a mayusculas la primer letra de cada palabra de la oracion."""
     palabras = oracion.split(" ")
 
     resultado = ""
@@ -18,7 +20,8 @@ def mayuscula(oracion):                         #Convierte a mayusculas la prime
 
     return resultado
 
-def palabrascona(oracion):                  #Solo muestra las palabras que comiencen con A.
+def palabrascona(oracion):                  
+    """Solo muestra las palabras que comiencen con A."""
     palabras = oracion.split(" ")
 
     resultado = ""
@@ -35,4 +38,4 @@ def palabrascona(oracion):                  #Solo muestra las palabras que comie
     return resultado
 
 
-print(siglas("Fideos enigmaticos de estocolmo"))        #Esto no es un soborno
+print(devuelvesiglas("Fideos enigmaticos de estocolmo"))        #Esto no es un soborno

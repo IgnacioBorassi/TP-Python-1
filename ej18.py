@@ -1,4 +1,5 @@
-def invertirlistaauxiliar(cadena):          #Convierte "Cadena" en una lista aparte y la invierte
+def invertirlistaauxiliar(cadena):          
+  """Convierte la cadena en una lista aparte y la invierte"""
   lista = cadena.split(" ")
   lista2 = []
   longitud = len(lista)
@@ -8,7 +9,8 @@ def invertirlistaauxiliar(cadena):          #Convierte "Cadena" en una lista apa
   
   return " ".join(lista2)
 
-def invertirLista(cadena):                 #Convierte "Cadena" en 1/"Cadena" en si misma (Invertida ;)), eliminando las palabras y luego volviendolas a añadir
+def invertirLista(cadena):                 
+  """Invierte una cadena en si misma, eliminando las palabras y volviendolas a anadir"""
   lista = cadena.split(" ")
   longitud = len(lista)
   

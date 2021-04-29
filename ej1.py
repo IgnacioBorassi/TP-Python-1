@@ -1,8 +1,6 @@
-print("Hola, ingrese su nombre")
+nombre = input("Hola, ingrese su nombre")
 
-nombre = input()
-
-print("Buenas noches",nombre)
+print("Buenas noches ",nombre)
 
 numero1 = int(input("ingrese un numero "))
 

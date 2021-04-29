@@ -1,7 +1,7 @@
 import time
 from time import sleep
 
-contrasena = "estoesunacontraseñainventada" #Contraseña muy dificil inadivinable
+contrasena = "estoesunacontraseñainventada" #Contrasena muy dificil inadivinable
 fallos = 3
 pausas = 2
 
@@ -9,7 +9,7 @@ while fallos > 0:
     contrasenausuario = (input("Ingrese la contraseña: "))
     if contrasena == contrasenausuario:
         print("La contraseña ingresada es correcta")
-        break   #Si es correcta, finalizar el programa
+        break                                                   #Si es correcta, finalizar el programa
     else:
         print("Contraseña incorrecta")
         fallos -= 1
