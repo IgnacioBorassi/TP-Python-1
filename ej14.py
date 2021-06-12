@@ -26,7 +26,7 @@ while True:
             coincidencia = coincidencia - aciertos
             
             if int(adivinar) != int(resultado):
-                print("tuviste", coincidecia, "coincidencias y", aciertos, "aciertos")
+                print("tuviste", "coincidencias y", aciertos, "aciertos")
 
             elif  int(adivinar) == int(resultado):
                 print("Felicidades. Ganaste")

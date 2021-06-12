@@ -35,5 +35,3 @@ def dados(tiradas):
     if seis != 0:
         print("El numero 6 salio: ", seis, "veces")
     return tiradas
-    
-print(dados(tiradas))

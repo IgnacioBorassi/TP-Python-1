@@ -23,7 +23,7 @@ def reemplazar(cadena,longMax,costoCorto,costoLargo):
             Palabrascortas = Palabrascortas + 1
             
             for letra in palabras[i]:
-                
+                   
                 if letra == ".":
                   print(palabras[i][-1])
                   frase = f"{frase.strip()}{palabras[i].replace(palabras[i], 'STOP ')}" 

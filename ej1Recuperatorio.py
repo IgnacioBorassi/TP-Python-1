@@ -9,5 +9,3 @@ def converter(texto):
     for i in range (qtyletters):
         phrase = f"{phrase.strip()}{word[i].replace(letters[i], ROT13[i])}" 
     return f"la clave encriptada es:{phrase}"
-
-print(converter(text))
