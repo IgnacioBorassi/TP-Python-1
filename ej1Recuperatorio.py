@@ -14,10 +14,9 @@ rot13= ['1', '2', '3', '4', '5','6', '7', '8', '9','0','.', ',',' ','n','o','p',
 def transformacionrot13(frase):
     """Encripta con ROT13 una cadena de texto que le entregues"""
     longitud = len(frase)                      #Determino la cantidad de veces que voy a recorrer la lista de letras para comparar (cantidad de letras)
-    frase = frase.lower()
     conversion = ""
     for i in range(0, longitud):
-            for x in range (0, 39):
+            for x in range (0, 65):
                 if frase[i] == letras[x]:      #Comparo los caracteres con todos los de la lista de letras, el que es igual, lo reemplazo por la misma posicion en la ROT13 
                     conversion += rot13[x]          
     return conversion

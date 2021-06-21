@@ -3,7 +3,7 @@ romanos = [(1000, "M"), (900, "CM"), (500, "D"), (400, "CD"), (100, "C"), (90, "
 def conversoraromano(entero): 
     """Convierte el numero entero en romano"""
     resultado = ""
-
+dddddd
     while entero > 0:
         for n, r in romanos:
             while entero > n or entero == n:
