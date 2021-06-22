@@ -32,6 +32,4 @@ def cantidaddeletras(texto):
             diccionarioletras[i] = 1
     return diccionarioletras
 
-print(cantidaddeletras("tu mama  es mi novia"))
-
 
