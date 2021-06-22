@@ -12,6 +12,3 @@ def dados(tiradas):
             else:
                 diccionariosumas[sumadados] = 1    
     return diccionariosumas
-
-
-print(dados(54))
